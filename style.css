@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    font-size: 14px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+header{
+    font-weight: bold;
+    position: absolute;
+    margin-top: 5%;
+    padding-left: 30%;
+}
+.header{
+    font-size: 29px;
+}
+.mainbody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    display: flex;
+    margin: 10%;
+}
+.left{
+    position: relative;
+    padding: 12px;
+    margin-left: 3%;
+    /* margin-top: 10%; */
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    /* width: 20%;
+    height: 20%; */
+}
+
+.button{
+    margin: 4px;
+    padding-top: 6px;
+    width: 40px;
+}
+.button>button{
+    width: 90px;
+    text-align: start;
+    border-radius: 8px;
+    border: #000  solid 0px 0px 2px ;
+    height: 32px;
+    cursor: pointer;
+}
+.button>button:hover{
+    width: 100px;
+    height: 37px;
+    background: #e0c4b1;
+    transition: 0.2s  ease-in-out;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    background: #fff1ff;
+    border-radius: 12px;
+    border: solid #000 4px 0px 0px 4px;
+}
+.body{
+    padding-left: 60px;
+    margin-left: 55px;
+    width: 80%;
+    height: 70%;
+
+    background: inherit;
+}
+.title>span{
+    font-size: 22px;
+    font-weight: 500;
+    opacity: .4;
+}
+form{
+    position: relative;
+    width: 20rem;
+}
+form input[type="text"]{
+    position: absolute;
+    margin-top: 15%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    border: 2px solid rgb(181, 170, 170);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: inherit;
+    /* color: white; */
+    outline: none;
+    padding: 2px;
+    background: none;
+}
+
+form input[type="text"]:hover{
+    border-color: #bdb0a8;
+}
+form .inputs .label label.user_label{
+    position: absolute;
+    /* top: 0; */
+    left: 0.9rem;
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+    cursor: text;
+    transition: top 200ms ease-in,
+        left 200ms ease-in,
+        font-size 200ms ease-in,
+        background-color #fff1ff
+    ;
+}
+form input[type="text"]:focus + .label .user_label, form input[type="text"]:valid + .label .user_label{
+    margin-top: -0.002px;
+    font-size: 12px;
+    transition: .1s ease-in-out;
+    background-color: #fff1ff;
+    transition: 0.2s ease-in-out;
+}
+
+/* password */
+form .inputs .label label.password_label{
+    position: absolute;
+    /* top: 0; */
+    left: 0.9rem;
+    margin-top: 4rem;
+    padding: 0 0.5rem;
+    cursor: text;
+    transition: top 200ms ease-in,
+        left 200ms ease-in,
+        font-size 200ms ease-in,
+        background-color #fff1ff
+    ;
+}
+form input[type="password"]:focus + .label .password_label, form input[type="password"]:valid + .label .password_label{
+    margin-top: 42px;
+    font-size: 12px;
+    transition: .1s ease-in-out;
+    background-color: #fff1ff;
+    transition: 0.2s ease-in-out;
+}
+form input[type="password"]{
+    position: absolute;
+    padding: 12px;
+    margin-top: 30%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    border: 2px solid rgb(181, 170, 170);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: inherit;
+    /* color: white; */
+    outline: none;
+    padding: 2px;
+    background: none;
+}
+
+/* lastname label */
+
+form label.LastName_Label{
+    position: absolute;
+    left: 0.9rem;
+    margin-top: 4rem;
+    padding: 0 0.5rem;
+    cursor: text;
+    transition: top 200ms ease-in,
+        left 200ms ease-in,
+        font-size 200ms ease-in
+    ;
+}
+form input[type="text"]#LastName:focus + .label .LastName_Label, form input[type="text"]#LastName:valid  + .label .LastName_Label{
+    margin-top: 14.5%;
+    font-size: 12px;
+    background-color: #fff1ff;
+    transition: .1s ease-in-out;
+}
+form input[type="text"]#LastName{
+    position: absolute;
+    padding: 12px;
+    margin-top: 30%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    border: 2px solid rgb(181, 170, 170);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: inherit;
+    /* color: white; */
+    outline: none;
+    padding: 2px;
+    background: none;
+}
+
+form label.SName_Label{
+    position: absolute;
+    left: 0.9rem;
+    margin-top: 6.9rem;
+    padding: 0 0.5rem;
+    cursor: text;
+    transition: top 200ms ease-in,
+        left 200ms ease-in,
+        font-size 200ms ease-in
+    ;
+}
+form input[type="text"]#SName:focus + .label .SName_Label, form input[type="text"]#SName:valid  + .label .SName_Label{
+    margin-top: 30.5%;
+    font-size: 12px;
+    background-color: #fff1ff;
+    transition: .1s ease-in-out;
+}
+form input[type="text"]#SName{
+    position: absolute;
+    margin-top: 45%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    border: 2px solid rgb(181, 170, 170);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: inherit;
+    /* color: white; */
+    outline: none;
+    padding: 2px;
+    background: none;
+}
+
+/* Country Select */
+form label.Country_Label{
+    position: absolute;
+    left: 0.9rem;
+    margin-top: 6.9rem;
+    padding: 0 0.5rem;
+    cursor: text;
+    transition: top 200ms ease-in,
+        left 200ms ease-in,
+        font-size 200ms ease-in
+    ;
+}
+form select#countrySelect:focus + .label .Country_Label, form select#countrySelect:valid  + .label .Country_Label{
+    margin-top: 46.5%;
+    font-size: 10px;
+    background-color: #fff1ff;
+    transition: .1s ease-in-out;
+}
+form select#countrySelect{
+    position: absolute;
+    margin-top: 59%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    border: 2px solid rgb(181, 170, 170);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: inherit;
+    /* color: white; */
+    outline: none;
+    padding: 2px;
+    background: none;
+}
+
+
+
+.radio_buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+.inputs{
+    margin-top: 12px;
+}
+.process{
+    margin-top: 50%;
+    margin-left: 85%;
+}
+.Rinputs{
+    margin-top: 70%;
+}
+.RegisterRight{
+    height: 350px;
+}
+.checkbox{
+    position: absolute;
+    top: 0;
+    margin-top: 45%;
+}
