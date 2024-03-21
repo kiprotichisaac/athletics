@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="header">
+                IT-TRAIN
+            </span>
+        </div>
+    </header>
+    <div class="mainbody">
+        <div class="container">
+            <div class="left">
+                <div class="buttons">
+                    <div class="button a"><button>Login</button></div>
+                    <div class="button b"><button>Register</button></div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="body">
+                    <div class="title">
+                        <span> <b> Login </b></span>
+                    </div>
+                    <form action="login_process.php" method="post">
+                        <div class="radio_buttons">
+                           <div class="radio">
+                            <input type="radio" name="User" id="athlete" value="athlete">
+                            <label for="athlete">Athlete</label>
+                           </div>
+                           <div class="radio">
+                                <input type="radio" name="User" id="ADO" value="ADO">
+                                <label for="athlete">ADO</label>
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <div class="text_values">
+                                <input type="text" name="" id="username" placeholder=" " required>
+                                <div class="label">
+                                    <label for="username" class="user_label">UserName</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <div class="text_values">
+                                <input type="password" name="" id="password" placeholder=" " required>
+                                <div class="label">
+                                    <label for="password" class="password_label">Password</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inputs checkbox">
+                            <input type="checkbox" name="" id="Passwordtoggle">Show Password
+                            | <a href=""> Forgot Logins</a>
+                            <script>
+                                const passwordInput = document.getElementById('password');
+                                const showPasswordCheckbox = document.getElementById('Passwordtoggle');
+                                const label = document.querySelector('.password_label');
+                            
+                                showPasswordCheckbox.addEventListener('change', function() {
+                                    if (showPasswordCheckbox.checked) {
+                                        passwordInput.type = 'text';
+                                        passwordInput.style.position = 'absolute';
+                                        passwordInput.style.marginTop = '30%';
+                                        label.style.display = 'none';
+                                    } else {
+                                        passwordInput.type = 'password';
+                                        label.style.display = '';
+
+                                    }
+                                });
+                            </script>
+                        </div>
+                        
+                        <!-- <div class="inputs">
+                            <div class="text_values">
+                                <div class="input_value">
+                                    <input type="password" name="password" id="password">
+                                </div>
+                                <label for="password" class="pass_label">Password/Pin</label>
+                            </div>
+                        </div> -->
+                        
+                        <div class="process inputs">
+                            <input type="submit" value="Login">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
